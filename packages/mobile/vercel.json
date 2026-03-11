@@ -1,6 +1,6 @@
 {
   "outputDirectory": "dist",
   "rewrites": [
-    { "source": "/((?!_expo/).*)", "destination": "/index.html" }
+    { "source": "/((?!_expo/|assets/).*)", "destination": "/index.html" }
   ]
 }
