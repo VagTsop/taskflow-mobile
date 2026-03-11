@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+*.db
+data/
+.expo/
+.DS_Store
+*.tsbuildinfo
