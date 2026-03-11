@@ -1,8 +1,10 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Platform } from 'react-native';
 
+const PRODUCTION_API = 'https://natural-eagerness-production-f9cf.up.railway.app/api';
+
 const BASE_URL = Platform.OS === 'web'
-  ? 'http://localhost:3004/api'
+  ? (typeof window !== 'undefined' && window.location.hostname !== 'localhost' ? PRODUCTION_API : 'http://localhost:3004/api')
   : Platform.OS === 'android'
     ? 'http://10.0.2.2:3004/api'
     : 'http://localhost:3004/api';
