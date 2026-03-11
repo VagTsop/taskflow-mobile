@@ -24,7 +24,7 @@
       "bundler": "metro"
     },
     "plugins": [
-      "expo-haptics"
+      "expo-asset"
     ]
   }
 }
